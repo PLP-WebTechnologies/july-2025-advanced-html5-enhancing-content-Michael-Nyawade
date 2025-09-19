@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enhanced HTML5 Form Page</title>
+  </head>
+  <body>
+    <header>
+      <h1>Sample Web Page with Lists, Tables, Media & Form</h1>
+      <p>
+        This page demonstrates HTML5 features including structured content,
+        tables, media, and an accessible form with validation.
+      </p>
+    </header>
+
+    <main>
+      <!-- Section with Lists -->
+      <section>
+        <h2>Favorite Programming Languages</h2>
+        <ul>
+          <li>Python</li>
+          <li>JavaScript</li>
+          <li>Java</li>
+          <li>Go</li>
+        </ul>
+
+        <h3>Steps to Become a Web Developer</h3>
+        <ol>
+          <li>Learn the basics of HTML, CSS, and JavaScript</li>
+          <li>Practice building small projects</li>
+          <li>Understand responsive design</li>
+          <li>Learn a frontend framework</li>
+          <li>Explore backend development</li>
+        </ol>
+      </section>
+
+      <!-- Section with Table -->
+      <section>
+        <h2>Weekly Schedule</h2>
+        <table border="1">
+          <thead>
+            <tr>
+              <th>Day</th>
+              <th>Morning</th>
+              <th>Afternoon</th>
+              <th>Evening</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Monday</td>
+              <td>HTML Practice</td>
+              <td>CSS Projects</td>
+              <td>Free Time</td>
+            </tr>
+            <tr>
+              <td>Tuesday</td>
+              <td>JavaScript Basics</td>
+              <td>Exercises</td>
+              <td>Reading</td>
+            </tr>
+            <tr>
+              <td>Wednesday</td>
+              <td>Project Work</td>
+              <td>Debugging</td>
+              <td>Group Study</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Section with Media -->
+      <section>
+        <h2>Media Section</h2>
+        <figure>
+          <img src="html.png" alt="HTML Official Logo" height="200" />
+          <figcaption>HTML Official Logo</figcaption>
+        </figure>
+        <audio controls>
+          <source
+            src="https://www.w3schools.com/html/horse.ogg"
+            type="audio/ogg"
+          />
+          <source
+            src="https://www.w3schools.com/html/horse.mp3"
+            type="audio/mpeg"
+          />
+          Your browser does not support the audio element.
+        </audio>
+        <br /><br />
+        <video width="400" controls>
+          <source
+            src="https://www.w3schools.com/html/mov_bbb.mp4"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+      </section>
+
+      <!-- Section with Form -->
+      <section>
+        <h2>Registration Form</h2>
+        <form action="#" method="post" autocomplete="on">
+          <fieldset>
+            <legend>Personal Information</legend>
+            <label for="fname">First Name:</label>
+            <input
+              type="text"
+              id="fname"
+              name="fname"
+              placeholder="John"
+              required
+              minlength="2"
+            />
+
+            <label for="lname">Last Name:</label>
+            <input
+              type="text"
+              id="lname"
+              name="lname"
+              placeholder="Doe"
+              required
+              minlength="2"
+            />
+
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="you@example.com"
+              required
+            />
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required />
+          </fieldset>
+
+          <fieldset>
+            <legend>Account Details</legend>
+            <label for="username">Username:</label>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              required
+              pattern="[A-Za-z0-9]{5,}"
+              placeholder="At least 5 characters"
+            />
+
+            <label for="password">Password:</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              required
+              minlength="6"
+            />
+
+            <label for="confirm-password">Confirm Password:</label>
+            <input
+              type="password"
+              id="confirm-password"
+              name="confirm-password"
+              required
+              minlength="6"
+            />
+
+            <label for="role">Select Role:</label>
+            <select id="role" name="role" required>
+              <option value="">--Choose one--</option>
+              <option value="student">Student</option>
+              <option value="developer">Developer</option>
+              <option value="designer">Designer</option>
+            </select>
+          </fieldset>
+
+          <fieldset>
+            <legend>Preferences</legend>
+            <label>
+              <input type="checkbox" name="newsletter" checked />
+              Subscribe to newsletter
+            </label>
+
+            <p>Preferred Contact Method:</p>
+            <label
+              ><input type="radio" name="contact" value="email" required />
+              Email</label
+            >
+            <label
+              ><input type="radio" name="contact" value="phone" /> Phone</label
+            >
+          </fieldset>
+
+          <fieldset>
+            <legend>Additional Information</legend>
+            <label for="bio">Short Bio:</label>
+            <textarea
+              id="bio"
+              name="bio"
+              rows="4"
+              cols="50"
+              placeholder="Tell us about yourself..."
+              minlength="10"
+            ></textarea>
+
+            <label for="website">Personal Website:</label>
+            <input
+              type="url"
+              id="website"
+              name="website"
+              placeholder="https://example.com"
+            />
+
+            <label for="readonly-example">Membership ID (Read-only):</label>
+            <input
+              type="text"
+              id="readonly-example"
+              name="membership-id"
+              value="AUTO12345"
+              readonly
+            />
+          </fieldset>
+
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Sample Web Page</p>
+    </footer>
+  </body>
+</html>
